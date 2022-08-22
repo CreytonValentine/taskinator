@@ -18,6 +18,8 @@ var taskFormHandler = function(event) {
 
     formEl.reset();
 
+    var isEdit = formEl.hasAttribute("data-task-id");
+
     //package up data as an object
     var taskDataObj = {
         name : taskNameInput,
